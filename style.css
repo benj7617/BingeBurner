@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans);
+
+*{
+    font-family:Open Sans;
+}
+
+body{
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapertag.com%2Fwallpaper%2Ffull%2F9%2F9%2Ff%2F716759-funny-monkey-wallpaper-1920x1080-for-android-tablet.jpg&f=1&nofb=1&ipt=444ae83ebd535722f379703ef6337985fc92496e3a7aed7f8eb75777ebaa6fb3&ipo=images);
+  }
+
+.phone{
+    width: 450px;
+
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 30px;
+    color: black;
+}
+
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background: rgb(194, 194, 194);
+    border-radius: 10px;
+}
+
+.arrow-img{
+    width: 25px;
+}
+
+.main{
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    font-size:12px;
+}
+
+.main img{
+    width:50px;
+    height:auto;
+}
+
+.main h1{
+    text-align: center;
+    font-size: 22px;
+}
+
+.main h2{
+    text-align:right;
+    padding-left:10px;
+}
+
+.main h3{
+    padding-left:20px;
+    font-size:20px;
+}
