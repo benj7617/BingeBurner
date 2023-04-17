@@ -81,6 +81,16 @@ body{
     margin:-30px
   }
 
+  .icons{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .icons img{
+    width:25px;
+  }
+
   .holder{
     padding-bottom:400px;
   }
