@@ -10,13 +10,12 @@ body{
 
 .phone{
     width: 450px;
-
     position: absolute;
-    top: 10%;
+    top: 480px;
     left: 50%;
     transform: translate(-50%,-50%);
     background: rgb(255, 255, 255);
-    border-radius: 10px;
+    border-radius: 40px;
     padding: 30px;
     color: black;
 }
@@ -28,6 +27,7 @@ body{
     margin-bottom: 20px;
     background: rgb(194, 194, 194);
     border-radius: 10px;
+    font-weight:bold;
 }
 
 .arrow-img{
@@ -39,6 +39,9 @@ body{
     align-items: left;
     justify-content: space-between;
     font-size:12px;
+    border: 1px solid rgb(42, 75, 165);
+    border-radius:10px;
+    background-color: aqua;
 }
 
 .main img{
@@ -52,11 +55,32 @@ body{
 }
 
 .main h2{
-    text-align:right;
+    padding-right:10px;
     padding-left:10px;
+    padding-top:8px;
 }
 
 .main h3{
     padding-left:20px;
     font-size:20px;
 }
+
+.main:hover{
+    cursor: pointer;
+    background: peru;
+    color:#fff;
+    box-shadow: 0 5px 10px red;
+    border: 1px solid blanchedalmond;
+  }
+
+  .bottom-bar{
+    display: flex;
+    border: 1px solid rgb(42, 75, 165);
+    border-radius:0px 0px 30px 30px;
+    background-color: aqua;
+    margin:-30px
+  }
+
+  .holder{
+    padding-bottom:400px;
+  }
