@@ -14,16 +14,26 @@ let createUser = () => {
     let Email = document.getElementById("e-mail").value;
     let password = document.getElementById("password").value;
 
+    // Verficering variabler
     let SpecialChar = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+    let userNameCheck;
     let passwordWork;
     let emailCheck;
-    
+
+    // Verficerings if-statemenets
+    if(userName1 == ""){
+        userNameCheck = false;
+    }
+    else{
+        userNameCheck = true;
+    }
+
     if (SpecialChar.test(password)) {
         passwordWork = true;
     }
     else {
         passwordWork = false;
-        alert("please include a special character")
+        alert("please include a special character in your password")
     }
 
     if (Email.includes("@")) {
@@ -34,12 +44,12 @@ let createUser = () => {
         alert("please enter an email")
     }
 
-    if (passwordWork == true && emailCheck == true) {
+    if (passwordWork == true && emailCheck == true && userNameCheck == true) {
         localStorage.setItem("UserName", JSON.stringify(userName1));
         localStorage.setItem("Email", JSON.stringify(Email));
         localStorage.setItem("password", JSON.stringify(password));
         localStorage.setItem("points", JSON.stringify(0));
-        alert("user created!")
+        alert("User created! please login with your newly created user")
     }
 }
 

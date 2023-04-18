@@ -34,13 +34,13 @@
                 <button onclick="signUP()"> sign up</button>
             </div>
             <div id="signup" style="display:none">
-                <form>
+                <form autocomplete="off">
                     <label for="userName"> Enter Username:</label><br>
-                    <input type="text" id="userName"></input><br>
+                    <input type="text" id="userName" required></input><br>
                     <label for="e-mail"> Enter E-mail:</label><br>
-                    <input type="text" id="e-mail"></input><br>
-                    <label for="password">Enter a password. Must include min. 1 special character</label><br>
-                    <input type="text" class="pw" id="password"></input><br><br>
+                    <input type="text" id="e-mail" required></input><br>
+                    <label for="password">Enter a password, which includes 1 special character:</label><br>
+                    <input type="text" class="pw" id="password" required></input><br><br>
 
                     <button onclick="createUser()"> Sign up</button>
                     <span> or</span>
