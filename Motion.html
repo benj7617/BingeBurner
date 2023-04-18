@@ -6,39 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.5">
     <title>Shop</title>
     
+    <link rel="stylesheet" href="motion.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans">
-    <script src="script.js"></script>
-
+    <script defer src=".\motion.js"></script>
 </head>
 <body>
-    <div class="phone">
-        <div class="top-bar">
+    <div class="phone-motion">
+        <div class="top-bar-motion">
             <h1>Motion</h1>
-            <h2>420 points</h2>
-
+            <h2 id="userPoints"></h2>
         </div>
 
-        <div id="body" class="holder">
-            <div class="main">
-                <img src="./Icons/Netflix.png">
+        <div id="body" class="holder-mp">
+           
+            <div class="main-motion">
+                <img src="./Icons/walk.png">
                 <h1>Gåtur</h1>
-                <input>
-                <input>
+                <label for="walk-km">km:</label><br>
+                <input type="number" id="walk-km" name="km" placeholder="eg. 21"><br>
+                <label for="walk-tid">Tid(min):</label><br>
+                <input type="number" id="walk-tid" name="tid" placeholder="eg. 69">
+                <button type="text" onclick="" id="walk-beregn"> beregn</button>
             </div>
             <br>
-            <div class="main">
-                <img src="./Icons/Netflix.png">
+            <div class="main-motion">
+                <img src="./Icons/run.png">
                 <h1>Løbetur</h1>
-                <input>
-                <input>
+                <label for="run-km">km:</label><br>
+                <input type="number" id="run-km" name="km" placeholder="eg. 21"><br>
+                <label for="run-tid">Tid(min):</label><br>
+                <input type="number" id="run-tid" name="tid" placeholder="eg. 69">
+                <button type="text" onclick="" id="run-beregn"> beregn</button>
             </div>
             <br>
-            <div class="main">
-                <img src="./Icons/Netflix.png">
+            <div class="main-motion">
+                <img src="./Icons/cykel.png">
                 <h1>Cykeltur</h1>
-                <input>
-                <input>
+                <label for="cykel-km">km:</label><br>
+                <input type="number" id="cykel-km" name="km" placeholder="eg. 21"><br>
+                <label for="cykel-tid">Tid(min):</label><br>
+                <input type="number" id="cykel-tid" name="tid" placeholder="eg. 69">
+                <button type="text" onclick="" id="cykel-beregn"> beregn</button>
             </div>
         </div>
 

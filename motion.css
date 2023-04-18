@@ -1,0 +1,56 @@
+.phone-motion{
+    border: 3px solid rgb(0, 0, 0);
+    border-radius:0px 0px 30px 30px;
+    width: 450px;
+    position: absolute;
+    top: 480px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    /*background-image:url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.nydailynews.com%2Fresizer%2Fc5R1sD3jau0x47TjUGRrJGEOLAs%3D%2F1200x1001%2Ftop%2Farc-anglerfish-arc2-prod-tronc.s3.amazonaws.com%2Fpublic%2FFILU64YGZIBL6DPMPUBXPLU6CY.jpg&f=1&nofb=1&ipt=7c458bed7a902857ff2b0bc63dccc8af7174d4308e70e644fc87c2e0a7c09bdb&ipo=images);*/
+    border-radius: 40px;
+    padding: 30px;
+  
+    color: black;
+
+}
+
+.top-bar-motion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-weight:bold;
+    
+}
+
+.main-motion{
+    display: flex;
+    justify-content: space-between;
+    font-size:12px;
+    border: 1px solid rgb(42, 75, 165);
+    border-radius:10px;
+    background-color: rgba(255,0,0,0.3);
+    
+}
+
+.main-motion img{
+    width:50px;
+    height:auto;
+}
+
+.main-motion h1{
+    font-size: 22px;
+}
+
+.main-motion h2{
+    padding-right:10px;
+    padding-left:10px;
+    padding-top:8px;
+}
+
+.main-motion h3{
+    padding-left:20px;
+    font-size:20px;
+}
