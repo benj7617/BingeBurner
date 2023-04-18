@@ -5,12 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=0.5">
     <title>Shop</title>
-    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="setting.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans">
     <script defer src="setting.js"></script>
-
 </head>
 <body>
     <div class="phone">
@@ -22,19 +20,20 @@
         <div id="body" class="holder">
             <div>
                 <h2>Brugernavn</h2>
-                <input type="email" class="settingInput" id="BrugerNavnInput">
+                <input type="text" class="settingInput" id="BrugerNavnInput" required>
             </div>  
             <div>
                 <h2>Email Adresse</h2>
-                <input type="email" class="settingInput" id="EmailInput">
+                <input type="text" class="settingInput" id="EmailInput" required>
             </div>
             <div>
                 <h2>Password</h2>
-                <input type="email" class="settingInput" id="PasswordInput">
+                <input type="password" class="settingInput" id="PasswordInput" required>
+                <button type="button" id="passwordButton">show password</button>
             </div>
             <br>
             <div>
-                <button class="bekræftKnap"onclick="bekræftÆndring()">bekræft</button>
+                <button class="bekræftKnap"onclick="confirmChange()">bekræft</button>
             </div>
             </div>
 
