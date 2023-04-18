@@ -6,21 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LoginSystem</title>
-    <link rel="stylesheet" href=".\styleLoginSystem.css">
     <link rel="stylesheet" href=".\style.css">
+    <link rel="stylesheet" href=".\button.css">
+    <link rel="stylesheet" href=".\styleLoginSystem.css">
 </head>
 
 <body>
     <div class="phone">
         <div class="top-bar">
             <h1>Please log in</h1>
-            <h3>currently not logged in</h3>
+      
         </div>
 
         <div id="loginmenu">
-            <button onclick="signIN()">sign in</button>
-            <span> or</span>
-            <button onclick="signUP()"> sign up</button>
+            <button onclick="signIN()" id="signin" class="button-17">sign in</button>
+            <button onclick="signUP()" id="signup" class="button-17"> sign up</button>
         </div>
 
         <div id="body" class="holder">
@@ -31,7 +31,7 @@
                 <input type="text" class="pw" id="passwordLogIn"></input><br><br>
                 <button onclick="signInVerify()"> Log in</button>
                 <span> or</span>
-                <button onclick="signUP()"> sign up</button>
+                <button onclick="signUP()" class="button-17"> sign up</button>
             </div>
             <div id="signup" style="display:none">
                 <form autocomplete="off">
@@ -42,19 +42,10 @@
                     <label for="password">Enter a password, which includes 1 special character:</label><br>
                     <input type="text" class="pw" id="password" required></input><br><br>
 
-                    <button onclick="createUser()"> Sign up</button>
+                    <button onclick="createUser()" class="button-17"> Sign up</button>
                     <span> or</span>
-                    <button onclick="signIN()"> Sign in</button>
+                    <button onclick="signIN()" class="button-17"> Sign in</button>
                 </form>
-            </div>
-        </div>
-
-        <div class="bottom-bar">
-            <div class="icons">
-                <a href=".\Index.html"><img src="./Icons/home-notclicked.png"></a>
-                <a href=".\Index.html"><img src="./Icons/shop-clicked.png"></a>
-                <a href=".\Index.html"><img src="./Icons/motion-notclicked.png"></a>
-                <a href=".\Index.html"><img src="./Icons/settings-notclicked.png"></a>
             </div>
         </div>
     </div>
