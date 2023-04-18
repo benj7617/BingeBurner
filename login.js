@@ -61,7 +61,7 @@ function signInVerify() {
     console.log(passwordLogin);
 
     if(JSON.stringify(userNameLogin) == localStorage.getItem("UserName") && JSON.stringify(passwordLogin) == localStorage.getItem("password")){
-        window.location.href = "index.html";
+        window.location.href = "Home.html";
     }
     else{
         alert("wrong input, please try again or sign up")
