@@ -100,6 +100,10 @@ body{
     padding-top:50px;
   }
 
+  .icons a{
+    margin-top:-35px;
+  }
+
   .holder{
     padding-bottom:400px;
   }
