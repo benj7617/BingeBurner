@@ -5,7 +5,8 @@
 }
 
 body{
-    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapertag.com%2Fwallpaper%2Ffull%2F9%2F9%2Ff%2F716759-funny-monkey-wallpaper-1920x1080-for-android-tablet.jpg&f=1&nofb=1&ipt=444ae83ebd535722f379703ef6337985fc92496e3a7aed7f8eb75777ebaa6fb3&ipo=images);
+  background-color: cornflowerblue;
+    /*background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapertag.com%2Fwallpaper%2Ffull%2F9%2F9%2Ff%2F716759-funny-monkey-wallpaper-1920x1080-for-android-tablet.jpg&f=1&nofb=1&ipt=444ae83ebd535722f379703ef6337985fc92496e3a7aed7f8eb75777ebaa6fb3&ipo=images);*/
   }
 
 .phone{
@@ -14,7 +15,8 @@ body{
     top: 480px;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-image:url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.nydailynews.com%2Fresizer%2Fc5R1sD3jau0x47TjUGRrJGEOLAs%3D%2F1200x1001%2Ftop%2Farc-anglerfish-arc2-prod-tronc.s3.amazonaws.com%2Fpublic%2FFILU64YGZIBL6DPMPUBXPLU6CY.jpg&f=1&nofb=1&ipt=7c458bed7a902857ff2b0bc63dccc8af7174d4308e70e644fc87c2e0a7c09bdb&ipo=images);
+    background-color: #fff;
+    /*background-image:url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.nydailynews.com%2Fresizer%2Fc5R1sD3jau0x47TjUGRrJGEOLAs%3D%2F1200x1001%2Ftop%2Farc-anglerfish-arc2-prod-tronc.s3.amazonaws.com%2Fpublic%2FFILU64YGZIBL6DPMPUBXPLU6CY.jpg&f=1&nofb=1&ipt=7c458bed7a902857ff2b0bc63dccc8af7174d4308e70e644fc87c2e0a7c09bdb&ipo=images);*/
     border-radius: 40px;
     padding: 30px;
     color: black;
