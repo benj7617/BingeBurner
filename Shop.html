@@ -8,33 +8,33 @@
     
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans">
-    <script src="script.js"></script>
+    <script defer src=".\Shop.js"></script>
 
 </head>
 <body>
     <div class="phone">
         <div class="top-bar">
             <h1>Pointshop</h1>
-            <h2>420 points</h2>
+            <h2 id="userPoints"></h2>
 
         </div>
 
         <div id="body" class="holder">
-            <div class="main">
+            <div class="main" onclick="addPoints(-400)">
                 <img src="./Icons/Netflix.png">
                 <h1>Netflix</h1>
                 <h3>30 minutes</h3>
                 <h2>400 points</h2>
             </div>
             <br>
-            <div class="main">
+            <div class="main" onclick="addPoints(-200)">
                 <img src="./Icons/Netflix.png">
                 <h1>FlixNet</h1>
                 <h3>20 minutes</h3>
                 <h2>200 points</h2>
             </div>
             <br>
-            <div class="main">
+            <div class="main" onclick="addPoints(-200)">
                 <img src="./Icons/Netflix.png">
                 <h1>FlixNet</h1>
                 <h3>20 minutes</h3>
