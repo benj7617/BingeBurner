@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="setting.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans">
-    <script src="setting.js"></script>
+    <script defer src="setting.js"></script>
 
 </head>
 <body>
@@ -21,33 +21,44 @@
 
         <div id="body" class="holder">
             <div>
+                <h2>Brugernavn</h2>
+                <input type="email" class="settingInput" id="BrugerNavnInput">
+            </div>  
+            <div>
                 <h2>Email Adresse</h2>
-                <input type="email" class="settingInput">
+                <input type="email" class="settingInput" id="EmailInput">
             </div>
-            <!--
+            <div>
+                <h2>Password</h2>
+                <input type="email" class="settingInput" id="PasswordInput">
+            </div>
+            <br>
+            <div>
+                <button class="bekræftKnap"onclick="bekræftÆndring()">bekræft</button>
+            </div>
+            </div>
+
+        <div class="bottom-bar">
+            <div class="icons">
+                <a href=".\Home.html"><img src="./Icons/home-notclicked.png"></a>
+                <a href=".\Shop.html"><img src="./Icons/shop-notclicked.png"></a>
+                <a href=".\Motion.html"><img src="./Icons/motion-notclicked.png"></a>
+                <img src="./Icons/settings-clicked.png">
+            </div> 
+        </div>
+    </div>
+    <!--
+        Her er telfon nummer hvis det skal laves
             <div>
                 <h2>Telefon nummer</h2>
                 <input type="phone" class="settingInput">
             </div>
-            -->
+            
             <div>
                 <br>
                 <br>
                 <h3 class="glemtPassword">Glemt password</h3>
-
             </div>
-        </div>
-
-        <div class="bottom-bar">
-            <div class="icons">
-                <a href=".\Index.html"><img src="./Icons/home-notclicked.png"></a>
-                <a href=".\Shop.html"><img src="./Icons/shop-notclicked.png"></a>
-                <a href=".\Index.html"><img src="./Icons/motion-notclicked.png"></a>
-                <img src="./Icons/settings-clicked.png">
-            </div> 
-        </div>
-
-    </div>
-
+        -->
 </body>
 </html>

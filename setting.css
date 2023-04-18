@@ -18,10 +18,19 @@
 }
 
 .holder{
-    padding-bottom:500px;
+    padding-bottom:300px;
   }
 
 .settingHeader{
     margin: auto;
     text-align:center;
+}
+
+.bekræftKnap{
+    margin-left: 12px;
+    width: 95%;
+    height: 100%;
+    font-size: 18px;
+    border: 2px solid black;
+       
 }
