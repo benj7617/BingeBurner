@@ -8,6 +8,66 @@ document.getElementById("EmailInput").value = email;
 let password = JSON.parse(localStorage.getItem("password"));
 document.getElementById("PasswordInput").value = password;
 
-function bekræftÆndring(){
-    
+function show() {
+    let p = document.getElementById('PasswordInput');
+    p.setAttribute('type', 'text');
+}
+
+function hide() {
+    let p = document.getElementById('PasswordInput');
+    p.setAttribute('type', 'password');
+}
+
+let pwShown = 0;
+
+document.getElementById("passwordButton").addEventListener("click", function () {
+    if (pwShown == 0) {
+        pwShown = 1;
+        show();
+    } else {
+        pwShown = 0;
+        hide();
+    }
+}, false);
+
+function confirmChange() {
+    let newUserName = document.getElementById("BrugerNavnInput").value;
+    let newEmailName = document.getElementById("EmailInput").value;
+    let newPassword = document.getElementById("PasswordInput").value;
+
+    let SpecialChar = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+    let userNameCheck;
+    let passwordWork;
+    let emailCheck;
+
+    if (newUserName == "") {
+        userNameCheck = false;
+    }
+    else {
+        userNameCheck = true;
+    }
+
+    if (SpecialChar.test(newPassword)) {
+        passwordWork = true;
+    }
+    else {
+        passwordWork = false;
+        alert("please include a special character in your password")
+    }
+
+    if (newEmailName.includes("@")) {
+        emailCheck = true;
+    }
+    else {
+        emailCheck = false;
+        alert("please enter an email")
+    }
+
+    if (passwordWork == true && emailCheck == true && userNameCheck == true) {
+        localStorage.setItem("UserName", JSON.stringify(newUserName));
+        localStorage.setItem("Email", JSON.stringify(newEmailName));
+        localStorage.setItem("password", JSON.stringify(newPassword));
+        alert("New information added to the current account");
+        location.reload();
+    }
 }
