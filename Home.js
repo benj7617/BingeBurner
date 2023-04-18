@@ -1,5 +1,5 @@
 let getPoints = (function () {
-    document.getElementById("points").innerHTML = localStorage.getItem("points") + " points";
+    document.getElementById("points").innerHTML = localStorage.getItem("points");
 })();
 
 let getUserName = (function () {
