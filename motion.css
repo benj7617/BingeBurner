@@ -58,6 +58,7 @@
 .main-motion input{
     width:40px;
     margin-left:100px;
+
 }
 
 .main-motion h1{
@@ -65,3 +66,6 @@
     left:90px;
 }
 
+.spacer{
+    margin-bottom:500px;
+}
