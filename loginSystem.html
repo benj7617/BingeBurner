@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginSystem</title>
+    <link rel="stylesheet" href=".\styleLoginSystem.css">
+    <link rel="stylesheet" href=".\style.css">
+</head>
+
+<body>
+    <div class="phone">
+        <div class="top-bar">
+            <h1>Pointshop</h1>
+            <h3>currently not logged in</h3>
+        </div>
+
+        <div id="loginmenu">
+            <button onclick="signIN()">sign in</button>
+            <span> or</span>
+            <button onclick="signUP()"> sign up</button>
+        </div>
+
+        <div id="body" class="holder">
+            <div id="signin" style="display:none">
+                <label for="userNameLogIn"> Enter Username:</label><br>
+                <input type="text" id="userNameLogIn"></input><br>
+                <label for="passwordLogIn">Enter your password</label><br>
+                <input type="text" class="pw" id="passwordLogIn"></input><br><br>
+                <button onclick="signInVerify()"> Log in</button>
+                <span> or</span>
+                <button onclick="signUP()"> sign up</button>
+            </div>
+            <div id="signup" style="display:none">
+                <form>
+                    <label for="userName"> Enter Username:</label><br>
+                    <input type="text" id="userName"></input><br>
+                    <label for="e-mail"> Enter E-mail:</label><br>
+                    <input type="text" id="e-mail"></input><br>
+                    <label for="password">Enter a password. Must include min. 1 special character</label><br>
+                    <input type="text" class="pw" id="password"></input><br><br>
+
+                    <button onclick="createUser()"> Sign up</button>
+                    <span> or</span>
+                    <button onclick="signIN()"> Sign in</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="bottom-bar">
+            <div class="icons">
+                <a href=".\Index.html"><img src="./Icons/home-notclicked.png"></a>
+                <a href=".\Index.html"><img src="./Icons/shop-clicked.png"></a>
+                <a href=".\Index.html"><img src="./Icons/motion-notclicked.png"></a>
+                <a href=".\Index.html"><img src="./Icons/settings-notclicked.png"></a>
+            </div>
+        </div>
+    </div>
+    <script src=".\login.js"></script>
+</body>
+
+</html>
