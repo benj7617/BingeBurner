@@ -63,6 +63,9 @@
     border-radius: 10px;
 
 }
+.main-motion button{
+    border-radius: 10px;
+}
 
 .spacer{
     margin-bottom:500px;
