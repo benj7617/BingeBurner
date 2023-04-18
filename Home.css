@@ -27,10 +27,11 @@
     font-size:60px;
     font-weight:900;
     position:absolute;
-    left: 30px;
-    overflow-wrap: break-word;
-    max-width: 200px;
+    left: 90px;
+    overflow-wrap: anywhere;
+    max-width:110px;
     text-align: center;
+    max-height:900px;
 }
 
 .motionBox{
