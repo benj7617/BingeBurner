@@ -57,13 +57,11 @@
 
 .main-motion input{
     width:40px;
-    position:absolute;
+    margin-left:100px;
 }
 
-#input1{
-    padding-left:200px;
+.main-motion h1{
+    position: absolute;
+    left:90px;
 }
 
-#input2{
-    padding-left:20px;
-}
