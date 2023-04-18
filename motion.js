@@ -3,7 +3,7 @@ let getPoints = (function () {
 })();
 
 let pointModel = (distance, time, k) => {
-    let sum = ((distance * 1000)/time * k);
+    let sum = Math.round(((distance * 1000)/time * k));
     return sum;
 }
 
