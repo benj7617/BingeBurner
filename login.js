@@ -49,6 +49,7 @@ let createUser = () => {
         localStorage.setItem("Email", JSON.stringify(Email));
         localStorage.setItem("password", JSON.stringify(password));
         localStorage.setItem("points", JSON.stringify(0));
+        localStorage.setItem("calories", JSON.stringify(0));
         alert("User created! please login with your newly created user");
     }
 }

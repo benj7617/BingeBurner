@@ -2,12 +2,18 @@ let getPoints = (function () {
     document.getElementById("userPoints").innerHTML = localStorage.getItem("points") + " points";
 })();
 
-let addPoints = (sum) =>{
-    if(confirm("Du vil betale " + sum + " point! Er du sikker?") == true){
-        alert(sum + " point fjernet fra din konto! Du har nu adgang til den valgte undeerholdning");
-        points = parseInt(localStorage.getItem("points"));
-        point = points + parseInt(sum);
-        localStorage.setItem("points", JSON.stringify(point));
-        location.reload();
+let checkPoints = (price) => {
+    if(confirm("Do you want to buy this option?") == true){
+        let balance = JSON.parse(localStorage.getItem("points"));
+        balance = parseInt(balance) - price;
+        if(balance > 0){
+            localStorage.setItem("points", balance);
+            alert("30 min of Netflix bought for " + price);
+            location.reload();
+            // nu skal du videresendes - er det muligt at lave en ny fane hvor netflix.com åbner?
+        }
+        else{
+            alert("not suffient balance")
+        }
     }
 }

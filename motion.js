@@ -7,6 +7,10 @@ let pointModel = (distance, time, k) => {
     return sum;
 }
 
+let calorieModel = () => {
+
+}
+
 let addPoints = (sum) =>{
     if(confirm("You will recieve " + sum + " points! Are you finished with your workout?") == true){
         alert(sum + " points added to your acount");
