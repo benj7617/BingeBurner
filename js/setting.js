@@ -74,3 +74,7 @@ function confirmChange() {
         location.reload();
     }
 }
+
+let logOut = () => {
+    window.location.href="loginSystem.html"
+}

@@ -23,11 +23,12 @@
     text-align:center;
 }
 
-/*indstillinger for bekræft knappen*/
-.bekræftKnap{
-    margin-left: 12px;
-    width: 95%;
-    height: 100%;
-    font-size: 18px;
-    border: 2px solid black;
+/*indstillinger for knapperne*/
+#update{
+  margin-left: 130px;
+
+}
+
+#logOut{
+    margin-left: 175px;
 }
