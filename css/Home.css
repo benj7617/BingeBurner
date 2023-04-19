@@ -57,7 +57,7 @@
 .motionBox h2{
     font-size:50px;
     font-weight:900;
-    margin-left:-130px;
+    margin-left:-132px;
     margin-top:80px;
     overflow-wrap: anywhere;
     max-width:130px;
@@ -103,17 +103,36 @@
 margin-left:20px;
 }
 
-.holder{
-    padding-bottom:190px;
-  }
-
 .underholdningIDag{
     position: absolute; 
-    left:63.9%;
+    left:64%;
     font-size: 20px;
 }
 
 .MotionIDag{
     position: absolute; 
-    left:63.9%; 
+    top:61%; 
+    left:71%;
+    font-size: 20px;
 }
+
+#watchTime{
+    position: absolute; 
+    left:92%;
+    top:49%;
+    font-size: 18px;
+}
+
+#motionTime{
+    position: absolute; 
+    left:92%;
+    top:58%;
+    font-size: 18px;
+}
+
+/* gør telefonen længere i bunden*/
+.holder{
+    padding-bottom:175px;
+  }
+
+

@@ -2,9 +2,12 @@ let getPoints = (function () {
     document.getElementById("userPoints").innerHTML = localStorage.getItem("points") + " point";
 })();
 
+// I dette eksempel bliver brugeren sendt videre til den pågældende hjemmeside. Vi har valgt at vise
+// Hvordan det ville se ud hvis man havde købt 10 sekunder.
+// Hjemmesiden lukker nemlig efter 10 sekunder.
 function sendToPage(page) {
     let NetflixWindow = window.open(String(page), "_blank");
-    let timer = 10000;
+    let timer = 10000; 
     setTimeout(function () {
         NetflixWindow.close()
     }, timer);
@@ -19,7 +22,7 @@ let calcWatchTime = (time) => {
 
 
 let checkPoints = (price, page) => {
-    if (confirm("Do you want to buy this option?") == true) {
+    if (confirm("Er du sikker på at du gerne vil købe denne mulighed?") == true) {
         let balance = JSON.parse(localStorage.getItem("points"));
         balance = parseInt(balance) - price;
         let pageName = "";
@@ -39,7 +42,7 @@ let checkPoints = (price, page) => {
         
         if (balance >= 0) {
             localStorage.setItem("points", balance);
-            alert("45 min of " + pageName + " bought for " + price + ". Your time starts now!");
+            alert("45 min af " + pageName + " købt for " + price + ". Din tid starter nu!");
             calcWatchTime(45);
             sendToPage(String(page));  
             document.getElementById("userPoints").innerHTML = localStorage.getItem("points") + " points";

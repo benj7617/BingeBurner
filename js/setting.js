@@ -55,7 +55,7 @@ function confirmChange() {
     }
     else {
         passwordWork = false;
-        alert("please include a special character in your password")
+        alert("Brug venligst mindst et speical tegn i dit password")
     }
 
     if (newEmailName.includes("@")) {
@@ -63,14 +63,18 @@ function confirmChange() {
     }
     else {
         emailCheck = false;
-        alert("please enter an email")
+        alert("Skriv venligst en email")
     }
 
     if (passwordWork == true && emailCheck == true && userNameCheck == true) {
         localStorage.setItem("UserName", JSON.stringify(newUserName));
         localStorage.setItem("Email", JSON.stringify(newEmailName));
         localStorage.setItem("password", JSON.stringify(newPassword));
-        alert("New information added to the current account");
+        alert("Dine informationer er nu opdateret!");
         location.reload();
     }
+}
+
+let logOut = () => {
+    window.location.href="loginSystem.html"
 }
