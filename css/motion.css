@@ -68,3 +68,8 @@
 .spacer{
     margin-bottom:500px;
 }
+
+
+#walk-tid, #run-tid, #cykel-tid{
+    margin-left:0px;
+}
