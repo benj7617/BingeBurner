@@ -5,7 +5,7 @@
 }
 
 body{
-  background-color: cornflowerblue;
+  background-color: rgb(255, 255, 255);
     /*background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapertag.com%2Fwallpaper%2Ffull%2F9%2F9%2Ff%2F716759-funny-monkey-wallpaper-1920x1080-for-android-tablet.jpg&f=1&nofb=1&ipt=444ae83ebd535722f379703ef6337985fc92496e3a7aed7f8eb75777ebaa6fb3&ipo=images);*/
   }
 
@@ -45,7 +45,7 @@ body{
     font-size:12px;
     border: 1px solid rgb(42, 75, 165);
     border-radius:10px;
-    background-color: rgba(255,0,0,0.3);
+    background-color: rgb(155, 190, 254);
 }
 
 .main img{
@@ -71,9 +71,9 @@ body{
 
 .main:hover{
     cursor: pointer;
-    background: peru;
+    background: rgb(159, 179, 216);
     color:#fff;
-    box-shadow: 0 5px 10px red;
+    /*box-shadow: 0 5px 10px red;*/
     border: 1px solid blanchedalmond;
   }
 
