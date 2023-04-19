@@ -11,8 +11,10 @@ function sendToPage(page) {
     console.log("page closed after " + timer + " miliseconds");
 }
 
-let calcWatchTime = () => {
-
+let calcWatchTime = (time) => {
+    let currentWatchTime = parseInt(JSON.parse(localStorage.getItem("watchTime")));
+    WatchTime = currentWatchTime + parseInt(time);
+    localStorage.setItem("watchTime", JSON.stringify(WatchTime));
 }
 
 
@@ -37,7 +39,8 @@ let checkPoints = (price, page) => {
         
         if (balance >= 0) {
             localStorage.setItem("points", balance);
-            alert("30 min of " + pageName + " bought for " + price + ". Your time starts now!");
+            alert("45 min of " + pageName + " bought for " + price + ". Your time starts now!");
+            calcWatchTime(45);
             sendToPage(String(page));  
             document.getElementById("userPoints").innerHTML = localStorage.getItem("points") + " points";
         }

@@ -36,8 +36,10 @@ let addPoints = (sum) => {
     }
 }
 
-let calcMotionTime = () => {
-
+let calcMotionTime = (time) => {
+    let currentMotionTime = parseInt(JSON.parse(localStorage.getItem("motionTime")));
+    motionTime = currentMotionTime + parseInt(time);
+    localStorage.setItem("motionTime", JSON.stringify(motionTime));
 }
 
 function CalcPointsWalk() {
@@ -72,6 +74,7 @@ function CalcPointsRun() {
 
         let sum = pointModel(distance, time, k);
         addPoints(sum);
+        calcMotionTime(time);
         calorieModel("run", distance);
     }
     catch (error) {
@@ -91,6 +94,7 @@ function CalcPointsCycle() {
 
         let sum = pointModel(distance, time, k);
         addPoints(sum);
+        calcMotionTime(time);
         calorieModel("cycle", distance);
     }
     catch (error) {
