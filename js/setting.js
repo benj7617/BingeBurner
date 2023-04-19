@@ -11,11 +11,14 @@ document.getElementById("PasswordInput").value = password;
 function show() {
     let p = document.getElementById('PasswordInput');
     p.setAttribute('type', 'text');
+    document.getElementById("passwordButton").innerHTML = "Skjul password";
 }
 
 function hide() {
     let p = document.getElementById('PasswordInput');
     p.setAttribute('type', 'password');
+    p.innerHTML = "vis password"
+    document.getElementById("passwordButton").innerHTML = "Vis password";
 }
 
 let pwShown = 0;
