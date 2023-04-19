@@ -1,5 +1,5 @@
 let getPoints = (function () {
-    document.getElementById("userPoints").innerHTML = localStorage.getItem("points") + " points";
+    document.getElementById("userPoints").innerHTML = localStorage.getItem("points") + " point";
 })();
 
 function sendToPage(page) {
