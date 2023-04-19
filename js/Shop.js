@@ -11,6 +11,11 @@ function sendToPage(page) {
     console.log("page closed after " + timer + " miliseconds");
 }
 
+let calcWatchTime = () => {
+
+}
+
+
 let checkPoints = (price, page) => {
     if (confirm("Do you want to buy this option?") == true) {
         let balance = JSON.parse(localStorage.getItem("points"));

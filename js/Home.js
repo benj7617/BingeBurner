@@ -1,5 +1,5 @@
 let getPoints = (function () {
-    document.getElementById("points").innerHTML = localStorage.getItem("points");
+    document.getElementById("points").innerHTML = JSON.parse(localStorage.getItem("points"));
 })();
 
 let getUserName = (function () {
@@ -8,4 +8,12 @@ let getUserName = (function () {
 
 let getCalories = (function () {
     document.getElementById("kcal").innerHTML = JSON.parse(localStorage.getItem("calories")) + " kcal";
+})();
+
+let getWatchTime = (function () {
+    document.getElementById("watchTime").innerHTML = JSON.parse(localStorage.getItem("watchTime")) + " min";
+})();
+
+let getMotionTime = (function () {
+    document.getElementById("motionTime").innerHTML = JSON.parse(localStorage.getItem("motionTime")) + " min";
 })();

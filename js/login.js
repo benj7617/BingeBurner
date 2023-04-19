@@ -50,6 +50,8 @@ let createUser = () => {
         localStorage.setItem("password", JSON.stringify(password));
         localStorage.setItem("points", JSON.stringify(0));
         localStorage.setItem("calories", JSON.stringify(0));
+        localStorage.setItem("watchTime", JSON.stringify(0));
+        localStorage.setItem("motionTime", JSON.stringify(0));
         alert("User created! please login with your newly created user");
     }
 }
@@ -58,6 +60,7 @@ function signInVerify() {
     userNameLogin = document.getElementById("userNameLogIn").value;
     passwordLogin = document.getElementById("passwordLogIn").value;
 
+    // SKAL DETTE FJERNES?
     console.log(userNameLogin);
     console.log(passwordLogin);
 

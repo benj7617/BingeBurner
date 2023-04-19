@@ -36,6 +36,10 @@ let addPoints = (sum) => {
     }
 }
 
+let calcMotionTime = () => {
+
+}
+
 function CalcPointsWalk() {
     let distance = document.getElementById("walk-km").value;
     let time = document.getElementById("walk-tid").value;
@@ -48,6 +52,7 @@ function CalcPointsWalk() {
 
         let sum = pointModel(distance, time, k);
         addPoints(sum);
+        calcMotionTime(time);
         calorieModel("walk", distance);
     }
     catch (error) {
