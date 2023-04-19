@@ -9,19 +9,19 @@
     <link rel="stylesheet" href=".\css\style.css">
     <link rel="stylesheet" href=".\css\button.css">
     <link rel="stylesheet" href=".\css\styleLoginSystem.css">
-    <script src=".\login.js"></script>
+    <script src=".\js\login.js"></script>
 </head>
 
 <body>
     <div class="phone">
         <div class="top-bar">
-            <h1>Please log in</h1>
-      
+            <h1>BingeBurner</h1>
+           
         </div>
 
         <div id="loginmenu">
-            <button onclick="signIN()" id="signin" class="button-17">sign in</button>
-            <button onclick="signUP()" id="signup" class="button-17"> sign up</button>
+            <button onclick="signIN()" id="søren" class="button-17">sign in</button>
+            <button onclick="signUP()" id="jens"  class="button-17"> sign up</button>
         </div>
 
         <div id="body" class="holder">
@@ -30,21 +30,21 @@
                 <input type="text" id="userNameLogIn"></input><br>
                 <label for="passwordLogIn">Enter your password</label><br>
                 <input type="text" class="pw" id="passwordLogIn"></input><br><br>
-                <button onclick="signInVerify()"> Log in</button>
+                <button onclick="signInVerify()" class="button-17"> Log in</button>
                 <span> or</span>
                 <button onclick="signUP()" class="button-17"> sign up</button>
             </div>
             <div id="signup" style="display:none">
-                <form autocomplete="off">
-                    <label for="userName"> Enter Username:</label><br>
-                    <input type="text" id="userName" required></input><br>
-                    <label for="e-mail"> Enter E-mail:</label><br>
-                    <input type="text" id="e-mail" required></input><br>
-                    <label for="password">Enter a password, which includes 1 special character:</label><br>
-                    <input type="text" class="pw" id="password" required></input><br><br>
-
+                <form autocomplete="off" class="signupform">
+                    <br>
+                    <input type="text" id="userName" required placeholder="Username"></input><br>
+                    <br>
+                    <input type="text" id="e-mail" required placeholder="E-mail"></input><br>
+                    <br>
+                    <input type="text" class="pw" id="password" required placeholder="Password"></input><br>
+                    <p class="specialChar" style="margin-left:-30px;">Must include 1 special character</p>
                     <button onclick="createUser()" class="button-17"> Sign up</button>
-                    <span> or</span>
+                    <span>    </span>
                     <button onclick="signIN()" class="button-17"> Sign in</button>
                 </form>
             </div>

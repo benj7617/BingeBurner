@@ -12,14 +12,26 @@ input.pw {
     left: 32%;
 }
 
-#signin{
+#søren{
     position:absolute;
     left: 40%;
     top: 40%;
 }
 
-#signup{
+#jens{
     position:absolute;
     left: 40%;
     top: 60%;
+}
+
+#signup{
+    position:absolute;
+    left: 30%;
+    top: 40%;
+}
+
+#signin{
+    position:absolute;
+    left: 30%;
+    top: 40%;
 }
