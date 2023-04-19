@@ -2,6 +2,8 @@
 *{
     font-family:Open Sans;
 }
+
+/*indstillinger for alle input felterne*/
 .settingInput{
     margin: auto;
     width: 95%;
@@ -11,12 +13,7 @@
     padding: 10px;   
 }
 
-.glemtPassword{
-    margin: auto;
-    text-align:center;
-    color:grey;
-}
-
+/*gør telefonen længere*/
 .holder{
     padding-bottom:300px;
   }
@@ -26,6 +23,7 @@
     text-align:center;
 }
 
+/*indstillinger for bekræft knappen*/
 .bekræftKnap{
     margin-left: 12px;
     width: 95%;

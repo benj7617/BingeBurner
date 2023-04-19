@@ -59,7 +59,7 @@
 
 }
 
-/* g'r at ovenstående indstillinger ikke gælder for inputene til højre, så de står rigtigt*/
+/* gør at ovenstående indstillinger ikke gælder for inputene til højre, så de står rigtigt*/
 #walk-tid, #run-tid, #cykel-tid{
     margin-left:0px;
 }
