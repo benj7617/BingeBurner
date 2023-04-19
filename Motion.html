@@ -20,13 +20,13 @@
         </div>
 
         <div id="body" class="holder-mp">
-           
+            
             <div class="main-motion">
                 <img src="./Icons/walk.png">
                 <h1>Gåtur</h1>
                 <input type="string" id="walk-km" name="km" placeholder="Km" min="1">
                 <input type="string" id="walk-tid" name="tid" placeholder="min" min="1">
-                <button type="text" class="button-17" onclick="CalcPointsWalk()"> Beregn </button>
+                <button type="text" class="button-17" onclick="CalcPointsWalk()" id="enKnap"> Beregn </button>
             </div>
             <br>
             <div class="main-motion">
@@ -34,7 +34,7 @@
                 <h1>Løbetur</h1>
                 <input type="string" id="run-km" name="km" placeholder="Km" min="1">
                 <input type="string" id="run-tid" name="tid" placeholder="min" min="1">
-                <button type="text" class="button-17" onclick="CalcPointsRun()"> Beregn</button>
+                <button type="text" class="button-17" onclick="CalcPointsRun()" id="enKnap"> Beregn</button>
             </div>
             <br>
             <div class="main-motion">
@@ -42,7 +42,7 @@
                 <h1>Cykeltur</h1>
                 <input type="string" id="cykel-km" name="km" placeholder="Km" min="1"><br>
                 <input type="string" id="cykel-tid" name="tid" placeholder="min" min="1">
-                <button type="text" class="button-17" onclick="CalcPointsCycle()"> Beregn</button>
+                <button type="text" class="button-17" onclick="CalcPointsCycle()" id="enKnap"> Beregn</button>
             </div>
         </div>
         <div class="spacer">
