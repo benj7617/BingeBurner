@@ -27,8 +27,8 @@ let calorieModel = (activity, distance) => {
 }
 
 let addPoints = (sum) => {
-    if (confirm("You will recieve " + sum + " points! Are you finished with your workout?") == true) {
-        alert(sum + " points added to your acount");
+    if (confirm("Du vil modtage " + sum + " points! Er du færdig med dit workout?") == true) {
+        alert(sum + " points tilføjet til din konto");
         points = parseInt(localStorage.getItem("points"));
         point = points + parseInt(sum);
         localStorage.setItem("points", JSON.stringify(point));
@@ -48,9 +48,9 @@ function CalcPointsWalk() {
     let k = 1.25;
 
     try{
-        if (isNaN(distance) || isNaN(time)) throw "Input is not a number";
-        if (time == 0 || distance == 0) throw "Input is not possible";
-        if (time < 0 || distance < 0) throw "Negative input not possible";
+        if (isNaN(distance) || isNaN(time)) throw "Indtast venligst et tal";
+        if (time == 0 || distance == 0) throw "Du har indtastet forkete værdier, det kan f.eks. være 0";
+        if (time < 0 || distance < 0) throw "Man må ikke indtaste negative tal";
 
         let sum = pointModel(distance, time, k);
         addPoints(sum);
@@ -68,9 +68,9 @@ function CalcPointsRun() {
     let k = 2;
 
     try{
-        if (isNaN(distance) || isNaN(time)) throw "Input is not a number";
-        if (time == 0 || distance == 0) throw "Input is not possible";
-        if (time < 0 || distance < 0) throw "Negative input not possible";
+        if (isNaN(distance) || isNaN(time)) throw "Indtast venligst et tal";
+        if (time == 0 || distance == 0) throw "Du har indtastet forkete værdier, det kan f.eks. være 0";
+        if (time < 0 || distance < 0) throw "Man må ikke indtaste negative tal";
 
         let sum = pointModel(distance, time, k);
         addPoints(sum);
@@ -88,9 +88,9 @@ function CalcPointsCycle() {
     let k = 0.75;
 
     try{
-        if (isNaN(distance) || isNaN(time)) throw "Input is not a number";
-        if (time == 0 || distance == 0) throw "Input is not possible";
-        if (time < 0 || distance < 0) throw "Negative input not possible";
+        if (isNaN(distance) || isNaN(time)) throw "Indtast venligst et tal";
+        if (time == 0 || distance == 0) throw "Du har indtastet forkete værdier, det kan f.eks. være 0";
+        if (time < 0 || distance < 0) throw "Man må ikke indtaste negative tal";
 
         let sum = pointModel(distance, time, k);
         addPoints(sum);

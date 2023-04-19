@@ -33,7 +33,7 @@ let createUser = () => {
     }
     else {
         passwordWork = false;
-        alert("please include a special character in your password")
+        alert("Brug venligst mindst et speical tegn i dit password")
     }
 
     if (Email.includes("@")) {
@@ -41,7 +41,7 @@ let createUser = () => {
     }
     else {
         emailCheck = false;
-        alert("please enter an email")
+        alert("Skriv venligst en email")
     }
 
     if (passwordWork == true && emailCheck == true && userNameCheck == true) {
@@ -52,7 +52,7 @@ let createUser = () => {
         localStorage.setItem("calories", JSON.stringify(0));
         localStorage.setItem("watchTime", JSON.stringify(0));
         localStorage.setItem("motionTime", JSON.stringify(0));
-        alert("User created! please login with your newly created user");
+        alert("Bruger oprettet! Log nu venligst på med din nye bruger");
     }
 }
 
@@ -60,14 +60,10 @@ function signInVerify() {
     userNameLogin = document.getElementById("userNameLogIn").value;
     passwordLogin = document.getElementById("passwordLogIn").value;
 
-    // SKAL DETTE FJERNES?
-    console.log(userNameLogin);
-    console.log(passwordLogin);
-
     if(JSON.stringify(userNameLogin) == localStorage.getItem("UserName") && JSON.stringify(passwordLogin) == localStorage.getItem("password")){
         window.location.href = "Home.html";
     }
     else{
-        alert("wrong input, please try again or sign up")
+        alert("Enten den indtastede adgangskode eller brugernavn er forkert. Prøv veligst igen.")
     }
 }
