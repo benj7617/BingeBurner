@@ -9,4 +9,3 @@ let getUserName = (function () {
 let getCalories = (function () {
     document.getElementById("kcal").innerHTML = JSON.parse(localStorage.getItem("calories")) + " kcal";
 })();
-
