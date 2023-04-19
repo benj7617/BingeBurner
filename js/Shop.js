@@ -7,7 +7,7 @@ let getPoints = (function () {
 // Hjemmesiden lukker nemlig efter 10 sekunder.
 function sendToPage(page) {
     let NetflixWindow = window.open(String(page), "_blank");
-    let timer = 10000;
+    let timer = 10000; 
     setTimeout(function () {
         NetflixWindow.close()
     }, timer);
