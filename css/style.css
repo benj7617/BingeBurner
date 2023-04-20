@@ -111,5 +111,10 @@ body{
   }
 
   .holder{
-    padding-bottom:420px;
+    padding-bottom:366px;
+  }
+
+  .gåVæk{
+    position:absolute;
+    top:55%;
   }

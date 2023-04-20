@@ -132,7 +132,11 @@ margin-left:20px;
 
 /* gør telefonen længere i bunden*/
 .holder{
-    padding-bottom:175px;
+    padding-bottom:197px;
   }
 
-
+/*flytter på infotekst */
+.gåVæk{
+    position:absolute;
+    top:70%;
+}
