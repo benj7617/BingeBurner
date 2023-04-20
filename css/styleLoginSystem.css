@@ -67,6 +67,10 @@ input.pw {
     top: 30%;
 }
 
+#signin input, #signup input{
+    margin-left:11px;
+}
+
 
 
 /* Denne knap er googles og snuppet fra https://getcssscan.com/css-buttons-examples 
