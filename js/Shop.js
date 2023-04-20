@@ -48,7 +48,7 @@ let checkPoints = (price, page) => {
             document.getElementById("userPoints").innerHTML = localStorage.getItem("points") + " points";
         }
         else {
-            alert("not suffient funds")
+            alert("Du har ikke nok point.")
         }
     }
 }
