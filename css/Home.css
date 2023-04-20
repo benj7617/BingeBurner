@@ -6,8 +6,10 @@
 }
 
 .pointBox{
-    
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     font-size:12px;
     border: 1px solid rgb(42, 75, 165);
     border-radius:10px;
@@ -23,25 +25,15 @@
     top:18%;
     font-size: 40px;
 }
-.pointBox p{
-    margin-top: 110px;
-    margin-left: 5px;
-    margin-right: 5px;
-    text-align: center;
-    font-size: 16px;
-    
-}
 
 /*pointene*/
 .pointBox h2{
     text-align: center;
     font-size:60px;
     font-weight:900;
-    position:absolute;
-    top: 47.5%;
-    left:17%;
-    
-    
+    overflow-wrap: anywhere;
+    max-width:140px;
+    max-height:900px;
 }
 
 .motionBox{
