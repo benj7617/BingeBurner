@@ -45,14 +45,14 @@ input.pw {
 
 #søren{
     position:absolute;
-    left: 28.5%;
-    top: 60%;
+    left: 30%;
+    top: 45%;
 }
 
 #jens{
     position:absolute;
-    left: 40%;
-    top: 75%;
+    left: 39.5%;
+    top: 60%;
 }
 
 #signup{
@@ -69,8 +69,6 @@ input.pw {
 
 /* Denne knap er googles og snuppet fra https://getcssscan.com/css-buttons-examples 
 <button class="button-17" role="button">Button 17</button> */
-
-/* CSS */
 .button-1 {
     align-items: center;
     appearance: none;
