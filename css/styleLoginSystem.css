@@ -58,14 +58,16 @@ input.pw {
 #signup{
     position:absolute;
     left: 30%;
-    top: 40%;
+    top: 30%;
 }
 
 #signin{
     position:absolute;
     left: 30%;
-    top: 40%;
+    top: 30%;
 }
+
+
 
 /* Denne knap er googles og snuppet fra https://getcssscan.com/css-buttons-examples 
 <button class="button-17" role="button">Button 17</button> */
