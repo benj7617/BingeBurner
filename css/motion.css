@@ -56,6 +56,9 @@
     width:40px;
     margin-left:100px;
     border-radius: 10px;
+    position:absolute;
+    left:200px;
+    height:40px;
 
 }
 
